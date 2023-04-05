@@ -6,22 +6,61 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
+    <style type="text/css">
+      #history, #gastro, #video{
+        display: none;
+      }
+      #home {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <div class="uoc-footer">
+      <button onclick="ocultarTodo();">Home</button>
+      <button onclick="mostrarHistoria();">History</button>    
+      <button onclick="mostrarGastro();">Gastronomia</button>
+      <button onclick="mostrarVideo();">Videos</button>
     </div>
+    
+    <div id="home">   <include  src="./views/home.html"></include>   </div>
+
+    <div id="history"><include  src="./views/history.html"></include></div>
+
+    <div id="gastro"> <include  src="./views/gastro.html"></include> </div>
+
+    <div id="video">  <include  src="./views/videos.html"></include> </div>
+    
     <include src="./views/footer.html"></include>
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="text/javascript">
+      function mostrarHistoria() {
+        document.getElementById('history').style.display = 'block';
+        document.getElementById('gastro').style.display = 'none';
+        document.getElementById('video').style.display = 'none';
+        document.getElementById('home').style.display = 'none';
+      }
+      function mostrarGastro() {
+        document.getElementById('history').style.display = 'none';
+        document.getElementById('gastro').style.display = 'block';
+        document.getElementById('video').style.display = 'none';
+        document.getElementById('home').style.display = 'none';
+      }
+      function mostrarVideo() {
+        document.getElementById('history').style.display = 'none';
+        document.getElementById('gastro').style.display = 'none';
+        document.getElementById('video').style.display = 'block';
+        document.getElementById('home').style.display = 'none';
+      }
+  
+      function ocultarTodo() {
+        document.getElementById('history').style.display = 'none';
+        document.getElementById('gastro').style.display = 'none';
+        document.getElementById('video').style.display = 'none';
+        document.getElementById('home').style.display = 'block';
+      }
+  
+    </script>
   </body>
 </html>
