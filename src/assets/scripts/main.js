@@ -9,8 +9,9 @@
 /**
  * Write any other JavaScript below
  */
+import("./navegacion.js");
 
-+( function() {
++(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();
