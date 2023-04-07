@@ -3,12 +3,12 @@ Css para pagina de Gastro
 *************************************************************/
 
 .gastro-container {    
+  justify-content: center;
+  width: 100%;  
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto;  
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
-  justify-content: center;
 }
 
 
@@ -33,8 +33,8 @@ header h1, header p {
 
 .gastro-container-list-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
 }
     @media (min-width: 768px) and (max-width: 992px) {
     .gastro-container-list-items {
@@ -49,9 +49,9 @@ header h1, header p {
 .gastro-container-list-item-img {
   width: 100%;
   height: auto;
-  transition: transform 0.1s;
-  overflow: hidden;
   margin-bottom: 10px;
+  overflow: hidden;
+  transition: transform 0.1s;    
 }
 
 /*------------------------------------*\
@@ -69,7 +69,7 @@ header h1, header p {
 
 .gastro-container-list-item-title {
   font-size: 1.15rem;
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
 }   
 

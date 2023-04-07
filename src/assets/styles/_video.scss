@@ -2,11 +2,12 @@
 Css para pagina de video
 *************************************************************/
 .video-container {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
+  
 }
 
 /*------------------------------------*\
@@ -32,27 +33,27 @@ header {
 \*------------------------------------*/
 
   .video-grid-container .video-grid-item-video {
+    margin-bottom: 24px;
     background-color: white;
-    margin-bottom: 24px
   }
 
     .video-grid-container .video-grid-item-video p {
-      padding: 0 15px 15px 15px;
       margin-bottom: 0;
+      padding: 0 15px 15px 15px;      
     }
 
       .video-grid-container .video-grid-item-video h2 {
-        font-size: 1.2rem;
-        text-transform: uppercase;
         padding: 15px 15px 0 15px;
+        font-size: 1.2rem;        
+        text-transform: uppercase;        
       }
 
 
         @media (min-width: 768px) {
           .video-grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
             grid-gap: 24px;
+            grid-template-columns: 1fr 1fr;            
             }
         }
 
@@ -61,8 +62,8 @@ header {
 \*------------------------------------*/
 
 .video-fluid {
-  position: relative;
   display: block;
+  position: relative;  
   width: 100%;
   padding: 0;
   overflow: hidden;
@@ -87,7 +88,7 @@ header {
 \*------------------------------------*/
 
     .video-fluid::before {
-      display: block;
       content: "";
+      display: block;      
       padding-top: 56.25%;
     }
