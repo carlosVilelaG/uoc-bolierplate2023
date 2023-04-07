@@ -1,54 +1,78 @@
-/* responsive helpers*/
+/************************************************************
+Css para pagina de video
+*************************************************************/
 .video-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
 
-header h1, header p {
+/*------------------------------------*\
+  #header
+\*------------------------------------*/
+
+header {
+  h1, p {
     text-align: center;
-}
+  }
+} 
+
+/*------------------------------------*\
+  #video-grid-container
+\*------------------------------------*/
 
 .video-grid-container {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.video-grid-container .video-grid-item-video {
+/*------------------------------------*\
+  #video-grid-item-video
+\*------------------------------------*/
+
+  .video-grid-container .video-grid-item-video {
     background-color: white;
     margin-bottom: 24px
-}
+  }
 
-.video-grid-container .video-grid-item-video p {
-    padding: 0 15px 15px 15px;
-    margin-bottom: 0;
-}
-
-.video-grid-container .video-grid-item-video h2 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    padding: 15px 15px 0 15px;
-}
-
-
-@media (min-width: 768px) {
-    .video-grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 24px;
+    .video-grid-container .video-grid-item-video p {
+      padding: 0 15px 15px 15px;
+      margin-bottom: 0;
     }
-}
+
+      .video-grid-container .video-grid-item-video h2 {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding: 15px 15px 0 15px;
+      }
+
+
+        @media (min-width: 768px) {
+          .video-grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 24px;
+            }
+        }
+
+/*------------------------------------*\
+  #video-fluid
+\*------------------------------------*/
 
 .video-fluid {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
 }
 
-.video-fluid-item {
+/*------------------------------------*\
+  #video-fluid-item
+\*------------------------------------*/
+
+  .video-fluid-item {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -56,10 +80,14 @@ header h1, header p {
     width: 100%;
     height: 100%;
     border: 0;
-}
+  }
 
-.video-fluid::before {
-    display: block;
-    content: "";
-    padding-top: 56.25%;
-}
+/*------------------------------------*\
+  #video-fluid::before
+\*------------------------------------*/
+
+    .video-fluid::before {
+      display: block;
+      content: "";
+      padding-top: 56.25%;
+    }

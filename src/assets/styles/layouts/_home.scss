@@ -1,3 +1,6 @@
+/************************************************************
+Css para pagina de inicial Home
+*************************************************************/
 * {
   box-sizing: border-box;
 }
@@ -25,6 +28,9 @@ body {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+/*------------------------------------*\
+  #uoc-logo
+\*------------------------------------*/
 
 .uoc-logo {
   display: block;
@@ -39,16 +45,23 @@ body {
   }
 }
 
+/*------------------------------------*\
+  #uoc-title
+\*------------------------------------*/
+
 .uoc-title {
   font-family: $font-family-serif;
   font-size: 24px;
   font-weight: 700;
   color: $uoc-corporate;
-
   @media (min-width: $mqMinWidth) {
     font-size: 36px;
   }
 }
+
+/*------------------------------------*\
+  #uoc-footer
+\*------------------------------------*/
 
 .uoc-footer {
   margin-top: 1.5rem;
